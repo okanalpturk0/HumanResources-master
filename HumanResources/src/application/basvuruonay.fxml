@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="911.0" prefWidth="809.0" style="-fx-background-color: gold;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.basvuruonayController">
+   <children>
+      <ImageView fx:id="img1" fitHeight="797.0" fitWidth="729.0" layoutX="45.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../../../../Downloads/correct-removebg-preview.png" />
+         </image></ImageView>
+      <AnchorPane fx:id="pane1" layoutX="21.0" layoutY="16.0" prefHeight="891.0" prefWidth="788.0">
+         <children>
+            <Label layoutX="28.0" layoutY="614.0" text="REFERANSLAR">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="31.0" text="İLETİŞİM BİLGİLERİ">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="adsoyad" editable="false" layoutX="27.0" layoutY="84.0" promptText="Ad/Soyad" />
+            <TextField fx:id="tel" editable="false" layoutX="211.0" layoutY="84.0" promptText="Telefon Numarası" />
+            <TextField fx:id="mail" editable="false" layoutX="394.0" layoutY="84.0" promptText="E-Mail" />
+            <TextField fx:id="tc" editable="false" layoutX="27.0" layoutY="245.0" promptText="TC Kimlik Numarası" />
+            <TextArea fx:id="adres" editable="false" layoutX="574.0" layoutY="84.0" prefHeight="102.0" prefWidth="200.0" promptText="Adres" />
+            <Label layoutX="27.0" layoutY="186.0" text="KİŞİSEL BİLGİLER">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="288.0" text="EĞİTİM BİLGİLERİ">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="324.0" text="Mezun olduğu ;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="kurum" editable="false" layoutX="27.0" layoutY="368.0" promptText="Kurum Adı" />
+            <TextField fx:id="bolum" editable="false" layoutX="211.0" layoutY="368.0" promptText="Bölüm" />
+            <Label layoutX="29.0" layoutY="404.0" text="Konuşabildiği yabancı dil/diller :" />
+            <TextField fx:id="dil" layoutX="27.0" layoutY="421.0" prefHeight="25.0" prefWidth="169.0" />
+            <Label layoutX="27.0" layoutY="475.0" text="DENEYİM">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="firma1" editable="false" layoutX="27.0" layoutY="522.0" promptText="Firma/Kurum Adı" />
+            <TextField fx:id="poz1" editable="false" layoutX="200.0" layoutY="522.0" promptText="Pozisyon" />
+            <TextField fx:id="firma2" editable="false" layoutX="27.0" layoutY="558.0" promptText="Firma/Kurum Adı" />
+            <TextField fx:id="poz2" editable="false" layoutX="200.0" layoutY="558.0" promptText="Pozisyon" />
+            <TextField fx:id="ref1" editable="false" layoutX="27.0" layoutY="675.0" promptText="Referans Ad/Soyad" />
+            <TextField fx:id="reftel1" editable="false" layoutX="200.0" layoutY="675.0" prefHeight="25.0" prefWidth="149.0" promptText="Ref Telefon Numarası" />
+            <TextField fx:id="ref2" editable="false" layoutX="27.0" layoutY="710.0" promptText="Referans Ad/Soyad" />
+            <TextField fx:id="reftel2" editable="false" layoutX="200.0" layoutY="710.0" prefHeight="25.0" prefWidth="149.0" promptText="Ref Telefon Numarası" />
+            <Label layoutX="32.0" layoutY="760.0" text="Tercih Edilen Pozisyon">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pozisyon" editable="false" layoutX="209.0" layoutY="760.0" prefHeight="25.0" prefWidth="149.0" />
+            <ToggleButton fx:id="onayla" layoutX="250.0" layoutY="799.0" mnemonicParsing="false" onAction="#onayla_Click" prefHeight="36.0" prefWidth="105.0" text="ONAYLA" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <SepiaTone />
+               </effect>
+            </ToggleButton>
+            <ToggleButton fx:id="reddet" layoutX="373.0" layoutY="799.0" mnemonicParsing="false" onAction="#reddet_Click" prefHeight="36.0" prefWidth="105.0" text="REDDET" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <SepiaTone />
+               </effect>
+            </ToggleButton>
+            <TextField fx:id="cinsiyet" editable="false" layoutX="195.0" layoutY="245.0" promptText="Cinsiyet" />
+            <TextField fx:id="kan" editable="false" layoutX="372.0" layoutY="245.0" promptText="Kan Grubu" />
+            <TextField fx:id="dt" editable="false" layoutX="550.0" layoutY="245.0" />
+            <TextField fx:id="mezuntarihi" editable="false" layoutX="394.0" layoutY="368.0" promptText="Mezuniyet Tarihi" />
+            <Label layoutX="30.0" layoutY="66.0" text="Ad/Soyad :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="214.0" layoutY="65.0" text="Telefon :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="396.0" layoutY="65.0" text="Mail :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="572.0" layoutY="65.0" text="Adres :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="36.0" layoutY="224.0" prefHeight="17.0" prefWidth="118.0" text="TC Kimlik Numarası :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="199.0" layoutY="224.0" text="Cinsiyet :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="378.0" layoutY="224.0" text="Kan Grubu :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="553.0" layoutY="224.0" text="Doğum Tarihi :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="349.0" text="Kurum Adı :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="216.0" layoutY="349.0" text="Bölüm :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="396.0" layoutY="349.0" text="Mezuniyet Tarihi :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="502.0" text="Firma/Kurum Adı :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="202.0" layoutY="502.0" text="Pozisyon :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="650.0" text="Adı/Soyadı :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <Label layoutX="204.0" layoutY="650.0" text="Telefon Numarası :">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="combo1" layoutX="612.0" layoutY="19.0" prefWidth="150.0" promptText="Basvuru No :" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

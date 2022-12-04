@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane1" prefHeight="726.0" prefWidth="615.0" style="-fx-background-color: gold;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.userpanelController">
+   <children>
+      <ImageView fx:id="img1" fitHeight="321.0" fitWidth="453.0" layoutX="20.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+      <AnchorPane fx:id="pane2" layoutX="33.0" layoutY="34.0" prefHeight="517.0" prefWidth="493.0" style="-fx-background-color: gold;" AnchorPane.bottomAnchor="175.0" AnchorPane.leftAnchor="33.0" AnchorPane.rightAnchor="-26.0" AnchorPane.topAnchor="34.0">
+         <children>
+            <ImageView fx:id="taleplerim" accessibleRole="BUTTON" fitHeight="67.0" fitWidth="77.0" layoutX="349.0" layoutY="68.0" onMouseClicked="#taleplerim_Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@taleplerim.png" />
+               </image></ImageView>
+            <Label layoutX="357.0" layoutY="135.0" text="Taleplerim" />
+            <ImageView fx:id="basvurular" fitHeight="67.0" fitWidth="67.0" layoutX="92.0" layoutY="68.0" onMouseClicked="#basvurular_Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@basvurular.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="basvuruOlustur" fitHeight="67.0" fitWidth="74.0" layoutX="223.0" layoutY="68.0" onMouseClicked="#basvuruOlustur_Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@basvuru_olustur.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="98.0" layoutY="135.0" text="Başvurular" />
+            <Label layoutX="214.0" layoutY="135.0" text="Başvuru Oluştur" />
+            <ImageView fx:id="izin" fitHeight="67.0" fitWidth="67.0" layoutX="226.0" layoutY="193.0" onMouseClicked="#izin_Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@izin.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="prim" fitHeight="61.0" fitWidth="84.0" layoutX="92.0" layoutY="198.0" onMouseClicked="#prim_Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@prim.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="208.0" layoutY="260.0" text="İzin Talebi Oluştur" />
+            <Label layoutX="83.0" layoutY="260.0" text="Prim Talebi Oluştur" />
+            <Label layoutX="321.0" layoutY="467.0" text="HOŞGELDİNİZ" />
+            <Label fx:id="lbl_user" layoutX="321.0" layoutY="490.0" text="lbl_user">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children></AnchorPane>
+      <AnchorPane fx:id="panemenu" opacity="0.65" prefHeight="726.0" prefWidth="209.0" style="-fx-background-color: black;" visible="false">
+         <children>
+            <ImageView fitHeight="67.0" fitWidth="61.0" layoutX="15.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@me.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="cikis" fitHeight="67.0" fitWidth="39.0" layoutX="156.0" layoutY="578.0" onMouseClicked="#cikis_Click" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@cikis.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="mailguncelle" layoutX="15.0" layoutY="147.0" mnemonicParsing="false" onAction="#mailguncelle_Click" prefHeight="25.0" prefWidth="114.0" text="E-MAİL GÜNCELLE" />
+            <Button fx:id="sifreguncelle" layoutX="15.0" layoutY="189.0" mnemonicParsing="false" onAction="#sifreguncelle_Click" prefHeight="25.0" prefWidth="114.0" text="ŞİFRE GÜNCELLE" />
+         </children></AnchorPane>
+      <ImageView fx:id="menu" fitHeight="38.0" fitWidth="84.0" layoutY="3.0" onMouseClicked="#menu_Click" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@menu.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

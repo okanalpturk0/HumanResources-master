@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane1" prefHeight="655.0" prefWidth="1139.0" style="-fx-background-color: gold;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.uyelerController">
+   <children>
+      <ImageView fitHeight="459.0" fitWidth="1118.0" layoutX="6.0" layoutY="243.0" opacity="0.11" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Downloads/Ekran_Görüntüsü__13_-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table1" layoutX="39.0" layoutY="22.0" prefHeight="381.0" prefWidth="1051.0" stylesheets="@../../../../Desktop/tblview.css">
+        <columns>
+          <TableColumn fx:id="no" prefWidth="47.0" text="No." />
+          <TableColumn fx:id="id" prefWidth="102.0" text="ID" />
+            <TableColumn fx:id="pw" prefWidth="71.0" text="Sifre" />
+            <TableColumn fx:id="admin" prefWidth="42.0" text="Admin" />
+            <TableColumn fx:id="tc" prefWidth="98.0" text="TC" />
+            <TableColumn fx:id="ad" prefWidth="138.0" text="Ad Soyad" />
+            <TableColumn fx:id="pozisyon" prefWidth="76.0" text="Pozisyon" />
+            <TableColumn fx:id="telefon" prefWidth="100.0" text="Telefon" />
+            <TableColumn fx:id="mail" prefWidth="107.0" text="e-Mail" />
+            <TableColumn fx:id="dt" prefWidth="128.0" text="Dogum Tarihi" />
+            <TableColumn fx:id="update" prefWidth="75.0" text="update" />
+            <TableColumn fx:id="delete" prefWidth="75.0" text="delete" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txt1" alignment="CENTER_RIGHT" layoutX="79.0" layoutY="423.0" onKeyPressed="#txt1_Changes" promptText="isme göre ara" />
+      <Label layoutX="22.0" layoutY="425.0" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

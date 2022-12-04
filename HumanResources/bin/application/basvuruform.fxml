@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.effect.SepiaTone?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="911.0" prefWidth="809.0" style="-fx-background-color: gold;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.basvuruformController">
+   <children>
+      <ImageView fx:id="img1" fitHeight="797.0" fitWidth="729.0" layoutX="45.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@correct.png" />
+         </image></ImageView>
+      <AnchorPane fx:id="pane1" layoutX="14.0" layoutY="14.0" opacity="0.07" prefHeight="891.0" prefWidth="788.0">
+         <children>
+            <Label layoutX="27.0" layoutY="626.0" text="REFERANSLAR">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="31.0" text="İLETİŞİM BİLGİLERİ">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="adsoyad" layoutX="27.0" layoutY="84.0" promptText="Ad/Soyad" />
+            <TextField fx:id="tel" layoutX="211.0" layoutY="84.0" promptText="Telefon Numarası" />
+            <TextField fx:id="mail" layoutX="394.0" layoutY="84.0" promptText="E-Mail" />
+            <TextField fx:id="tc" layoutX="27.0" layoutY="245.0" promptText="TC Kimlik Numarası" />
+            <TextArea fx:id="adres" layoutX="574.0" layoutY="84.0" prefHeight="102.0" prefWidth="200.0" promptText="Adres" />
+            <Label layoutX="27.0" layoutY="186.0" text="KİŞİSEL BİLGİLER">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="cinsiyet" layoutX="211.0" layoutY="245.0" prefWidth="150.0" promptText="Cinsiyet" visibleRowCount="3" />
+            <ComboBox fx:id="kan" layoutX="394.0" layoutY="245.0" prefWidth="150.0" promptText="Kan Grubu" />
+            <DatePicker fx:id="dt" layoutX="587.0" layoutY="245.0" promptText="Doğum Tarihi" />
+            <Label layoutX="27.0" layoutY="288.0" text="EĞİTİM BİLGİLERİ">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="29.0" layoutY="324.0" text="Mezun olduğunuz ;">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="kurum" layoutX="27.0" layoutY="355.0" promptText="Kurum Adı" />
+            <TextField fx:id="bolum" layoutX="211.0" layoutY="355.0" promptText="Bölüm" />
+            <DatePicker fx:id="mt" layoutX="394.0" layoutY="355.0" promptText="Mezuniyet Tarihi" />
+            <Label layoutX="29.0" layoutY="394.0" text="Konuşabildiğiniz yabancı dil/diller :" />
+            <TextField fx:id="dil" layoutX="27.0" layoutY="411.0" />
+            <Label layoutX="27.0" layoutY="475.0" text="DENEYİM">
+               <font>
+                  <Font name="System Bold" size="25.0" />
+               </font>
+            </Label>
+            <Label layoutX="145.0" layoutY="485.0" text="(Daha önce bir kurumda çalıştıysanız bu bilgileri doldurunuz.Çalışmadıysanız bos bırakınız.)" />
+            <TextField fx:id="firma1" layoutX="27.0" layoutY="522.0" promptText="Firma/Kurum Adı" />
+            <TextField fx:id="poz1" layoutX="200.0" layoutY="522.0" promptText="Pozisyon" />
+            <TextField fx:id="firma2" layoutX="27.0" layoutY="558.0" promptText="Firma/Kurum Adı" />
+            <TextField fx:id="poz2" layoutX="200.0" layoutY="558.0" promptText="Pozisyon" />
+            <TextField fx:id="ref1" layoutX="27.0" layoutY="662.0" promptText="Referans Ad/Soyad" />
+            <TextField fx:id="reftel1" layoutX="200.0" layoutY="662.0" prefHeight="25.0" prefWidth="149.0" promptText="Ref Telefon Numarası" />
+            <TextField fx:id="ref2" layoutX="27.0" layoutY="697.0" promptText="Referans Ad/Soyad" />
+            <Button fx:id="ekle1" layoutX="350.0" layoutY="523.0" mnemonicParsing="false" onAction="#ekle1_Click" prefHeight="17.0" prefWidth="14.0" text="+" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <effect>
+                  <SepiaTone />
+               </effect>
+            </Button>
+            <Button fx:id="ekle2" layoutX="350.0" layoutY="663.0" mnemonicParsing="false" onAction="#ekle2_Click" prefHeight="17.0" prefWidth="14.0" text="+" textOverrun="WORD_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+               <effect>
+                  <SepiaTone />
+               </effect>
+            </Button>
+            <TextField fx:id="reftel2" layoutX="200.0" layoutY="697.0" prefHeight="25.0" prefWidth="149.0" promptText="Ref Telefon Numarası" />
+            <Label layoutX="29.0" layoutY="745.0" text="Tercih Edilen Pozisyon">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="pozisyon" layoutX="206.0" layoutY="745.0" prefHeight="25.0" prefWidth="149.0" />
+            <ToggleButton fx:id="gonder" layoutX="250.0" layoutY="799.0" mnemonicParsing="false" onAction="#gonder_Click" prefHeight="36.0" prefWidth="105.0" text="GÖNDER" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <SepiaTone />
+               </effect>
+            </ToggleButton>
+            <Label layoutX="29.0" layoutY="67.0" text="(Zorunlu Alan)" textFill="#00000055">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="211.0" layoutY="67.0" text="(Zorunlu Alan)" textFill="#00000055">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="394.0" layoutY="67.0" text="(Zorunlu Alan)" textFill="#00000055">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="574.0" layoutY="67.0" text="(Zorunlu Alan)" textFill="#00000055">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="230.0" text="(Zorunlu Alan)" textFill="#00000055">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="211.0" layoutY="230.0" text="(Zorunlu Alan)" textFill="#00000055">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="587.0" layoutY="230.0" text="(Zorunlu Alan)" textFill="#00000055">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="394.0" layoutY="230.0" text="(Zorunlu Alan)" textFill="#00000055">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label layoutX="206.0" layoutY="730.0" text="(Zorunlu Alan)" textFill="#00000055">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
